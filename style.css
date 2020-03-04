@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_1 {
+    margin: 150px 20px 0 20px;
+}
+
+.container_1 .item1 {
+    width: 50%;
+}
+
+
+.container_1 .item1 .h1{
+    font-weight: bolder;
+    font-size: 55px;
+    max-width: 420px;
+}
+.container_1 .item1 p{
+    max-width: 400px;
+    margin-top: 20px;
+    opacity: 0.7;
+    font-size: 18px;
+}
+
+.container_1 .btn1 {
+    margin-top: 60px;
+    margin-right: 30px;
+    position: relative;
+    
+}
+
+.container_1 .btn1 :first-child {
+    border-radius: 10px;
+    width: 35%;
+    padding: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    
+}
+.container_1 .btn1 :first-child:hover{
+    color: rgb(105, 20, 20);
+    padding: 15px 20px 15px 20px;
+}
+
+.container_1 .btn1 :last-child {
+    margin-left: 20px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    background-color: rgb(228, 60, 60);
+    color: white;
+}
+
+.container_1 .item1 .icons {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container_1 .item1 .icons img{
+    max-width: 150px;
+}
+
+
+
+
+.container_1 .item2 {
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url(./img/Group\ 213.jpg);
+    align-self: flex-end;
+    position: relative;
+    overflow: hidden;
+
+}
+.container_1 .item2 .card1{
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container_1 .item2 .card1 .header{
+    display: flex;
+}
+.container_1 .item2 .card1 .header .name{
+    display: flex;
+    flex-direction: column;
+}
+.container_1 .item2 .card1 .header .name{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.container_1 .item2 .card1 .header .name :last-child{
+    margin-top: 10px;
+}
+.container_1 .item2 .card1 .main{
+    height: 150px;
+    margin-top: 20px;
+}
+.container_1 .item2 .card1 .main img{
+    margin-top: 10px;
+}
+.container_1 .item2 .card1 .footer{
+    display:flex;
+    margin-top: 20px;
+}
+.container_1 .item2 .card1 .footer .box1{
+    border-radius: 20px;
+    background-color: rgb(228, 60, 60);
+    padding: 20px;
+    margin-left: auto;
+}
+
+
+.btn2 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+}
+
+#section_1 {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 150px;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    display: grid;
+    overflow: hidden;
+    height: 400px;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#section_1 h1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 30px;
+
+
+}
+
+#section_1.item1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#section_1.item2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+
+#section_1.item3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+}
+
+#section_1 p {
+    text-align: center;
+}
+
+#section_1 h2 {
+    text-align: center;
+}
+
+#section_1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#article_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 650px 550px;
+    column-gap: 200px;
+    margin-top: 150px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+#article_1 .section_1 {
+    position: relative;
+    overflow: hidden;
+}
+
+#article_1 #card_1 {
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    row-gap: 40px;
+    padding: 20px 20px 40px 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    width: 85%;
+    height: 35%;
+}
+
+#article_1 .img {
+    margin-top: 20px;
+    display: flex;
+}
+
+#article_1 .num_1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+#article_1 .num_2 {
+    color: rgb(23, 248, 23);
+}
+
+#article_1 .rank p {
+    margin-top: 10px;
+    color: rgb(122, 118, 118);
+}
+
+#article_1 .projects p {
+    margin-top: 10px;
+    color: rgb(122, 118, 118);
+}
+
+
+#article_1 #card_1 .h_1 {
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+
+
+#article_1 .top_categories {}
+
+#article_1 .top_categories .btn {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+#article_1 .top_categories .box {
+    margin-left: 20px;
+    background-color: rgb(209, 204, 204);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+#article_1 .card_2 {
+    position: absolute;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    height: 420px;
+    width: 250px;
+    overflow: hidden;
+    left: 50%;
+    top: 20%;
+    z-index: 1;
+}
+
+#article_1 .card_2 h1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 15px;
+}
+
+#article_1 .card_2 .header {
+    margin-top: 40px;
+    display: flex;
+}
+
+#article_1 .card_2 .header h2 {
+    margin-right: 20px;
+    margin-left: 10px;
+    opacity: 0.6;
+    font-size: 13px;
+}
+
+#article_1 .card_2 .header .btn {
+    margin-left: 20px;
+    margin-right: 10px;
+    opacity: 0.6;
+    font-size: 10px;
+    display: flex;
+}
+
+#article_1 .card_2 .header .btn a {
+    margin-right: 20px;
+}
+
+/*lista*/
+.listh ol{
+}
+.listh ol li{
+}
+.listh ol li .name {
+margin-left: 70px;
+margin-top: 0;
+vertical-align: center;
+}
+
+.listh .img{
+    margin-top: 30px;
+}
+
+/* section 2,3*/
+#article_1 .section_3{
+    padding-left: 20%;
+}
+
+#article_1 .box_2{
+    margin-top: 120px;
+}
+#article_1 .box_2 h1{
+    font-weight: 500;
+    font-size: 30px;
+}
+#article_1 .box_2 p{
+    opacity: 0.6;
+    margin-top: 15px;
+}
+#article_1 .box_2 .learn-more{
+    margin-top: 40px;
+}
+#article_1 .box_2 a{
+    margin-left: 10px;
+}
+#article_1 .section_4{
+    position: relative;
+    padding-left: 25%;
+}
+
+/*section4 firs card */
+#article_1 .card_11{
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    width: 90%;
+    padding: 20px 10px 20px 10px;
+    height: 50%;
+    
+}
+#article_1 .card_11 .header{
+    height: 60px;
+    margin-top: 20px;
+    text-align: center;
+}
+#article_1 .card_11 .main{
+    margin: 20px 10px 20px 10px;   
+}
+#article_1 .card_11 .main h1{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+
+}
+#article_1 .card_11 .main p{
+    margin-top: 15px;
+    margin-left: 0px;
+    text-align: center;
+}
+#article_1 .card_11 .footer{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    
+}
+/*obratiti paznju na box1, pri smanjivanju  */
+#article_1 .card_11 .footer .box1{
+    border: rgb(182, 179, 179) 1px solid;
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+    margin-left: 10px; 
+    overflow: hidden;
+}
+#article_1 .card_11 .footer .box1 a{
+    text-decoration: none;
+    color: black;
+
+}
+#article_1 .card_11 .footer .box2{
+    border: rgb(182, 179, 179) 1px solid;
+    border-radius: 10px;
+    width: 45%;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(228, 60, 60);
+    padding-top: 15px;
+}
+#article_1 .card_11 .footer .box2 a{
+    text-decoration: none;
+    color: white;
+
+}
+#article_1 .card_22{
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    width: 70%;
+    height: 45%;
+    position: absolute;
+    top:45%;
+    right: 25%;
+    padding: 20px 15px 20px 15px;
+}
+#article_1 .card_22 .header{
+    height: 20%;
+    display: flex;
+    overflow: hidden;
+}
+#article_1 .card_22 .header .name{
+    margin-left: 15px;
+    margin-top:5px;
+}
+#article_1 .card_22 .main{
+    margin-top: 30px;
+    height: 40%;
+}
+#article_1 .card_22 .main p{
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+#article_1 .card_22 .footer{
+    display: flex;
+    height: 20%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+#article_1 .card_22 .footer .left{
+    display: flex;
+    height: 40px;
+    width: 50%;
+}
+#article_1 .card_22 .footer .left .box1{
+    border-radius: 7px;
+    display: flex;
+    padding: 10px 5px 10px 5px;
+    color: rgb(44, 83, 255);
+    background-color: rgb(223, 219, 219);
+}
+#article_1 .card_22 .footer .left .box2{
+    margin-left: 20px;
+    border-radius: 7px;
+    padding: 10px 5px 10px 5px;
+    color: rgba(230, 169, 56, 0.897);
+    background-color: rgb(223, 219, 219);
+}
+#article_1 .card_22 .footer .money{
+    align-self: center;
+    width: 50%;
+    text-align: right;
+}
+#section_1 .box1{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px 30px 0 30px;
+}
+
+#section_1 .star {
+    display: flex;
+    width:30%;
+}
+#section_1 .star img{
+    width: 15px;
+    height: 15px;
+}
+#section_1 .box1 .main {
+    margin-top: 20px;
+}
+#section_1 .box1 .main p{
+    opacity: 0.6;
+    text-align: left;
+}
+#section_1 .box1 .person {
+    float: left;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#section_1 .box1 .person .photo{
+    width: 50px;
+    height: 50px;
+}
+#section_1 .box1 .person .name{
+    margin-left: 20px;
+}
+#section_1 .box1 .person .name h2{
+    font-size: medium;
+    text-align: left;
+}
+#section_1 .box1 .person .name p{
+    font-size: small;
+    opacity: 0.6;
+    margin-top: 10px;
+}/*span srediti*/
+/*srediti liniiju lijevo */
+#section_1 .box1 .footer{
+    display: flex;
+    width: 100%;
+}
+#foot{
+    margin-top:150px;
+    margin-bottom: 150px;
+    width: 100%;
+    align-items: center;
+
+}
+#foot h1{
+    text-align: center;
+
+}
+#foot p{
+    margin-top: 20px;
+    text-align: center;
+}
+#foot .btn1 {
+    margin-top: 40px;
+    text-align: center;
+}
+#foot .btn1 :first-child{
+    border-radius: 10px;
+    padding: 10px;
+
+}
+#foot .btn1 :last-child{
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    background-color: rgb(228, 60, 60);
+    color: white;
+}
