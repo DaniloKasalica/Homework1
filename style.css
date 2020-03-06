@@ -13,16 +13,63 @@ body {
     background-position-y:-20%;
     background-image: url(./img/Group\ 213.jpg);
 }
-header{
-
+@media screen and (max-width: 1024px){
+    body{
+    max-width: 800px;
+    margin-left: auto;
+     margin-right: auto;
+     background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-position-y:-10%;
+    background-image: url(./img/Group\ 213.jpg);
+    display: grid;
+    }
 }
-
+@media screen and (max-width: 768px){
+    body{
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y:-5%;
+    background-image: url(./img/Group\ 213.jpg);
+    display: grid;
+    }
+}
+@media screen and (max-width: 425px){
+    body{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position-x: 300px;
+        background-position-y:-3%;
+        background-image: url(./img/Group\ 213.jpg);
+        display: grid;
+        }
+}
 .container_1 {
     margin: 150px 20px 0 20px;
     display: grid;
     grid-template-columns: 40% 60%;
     
 
+}
+@media screen and (max-width: 1024px){
+    .container_1{
+    margin: 150px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    row-gap: 150px;
+    overflow: hidden;
+    height: 2000px
+
+    }
 }
 
 .container_1 .item1 {
@@ -56,10 +103,6 @@ header{
     border: 1px solid rgb(221, 221, 221);
     
 }
-.container_1 .btn1 :first-child :hover{
-    color: rgb(105, 20, 20);
-    padding: 15px 20px 15px 20px;
-}
 
 .container_1 .btn1 :last-child {
     margin-left: 20px;
@@ -87,6 +130,7 @@ header{
 .container_1 .item2 {
    position: relative;
 }
+
 .container_1 .item2 .card1{
     position: absolute;
     top: -10%;
@@ -128,7 +172,6 @@ header{
     padding: 20px;
     margin-left: auto;
 }
-
 
 
 .container_1 .item2 .card3{
@@ -225,6 +268,7 @@ header .log {
     display: flex;
     width: 100%;
     justify-content: space-between;
+
 }
 .btn2 {
     padding: 10px 15px 10px 15px;
@@ -246,10 +290,25 @@ header .log {
     grid-column-gap: 50px;
     grid-row-gap: 20px;
     display: grid;
-    overflow: hidden;
+    overflow: visible;
     height: 400px;
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width:1024px){
+    #section_1{
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 250px;
+        column-gap: 50px;
+        margin-bottom: -150px;
+        row-gap: 20px;
+        display: grid;
+        overflow: visible;
+        height: 800px;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 #section_1 h1 {
@@ -294,25 +353,40 @@ header .log {
     width: 50%;
 }
 
-#article_1 {
+.article_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 650px 550px;
     column-gap: 200px;
     margin-top: 150px;
+    width: 100%;
+
+}
+
+@media screen and (max-width:1024px){
+    .article_1{
     width: 80%;
+    display: grid;
+    row-gap: 100px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
     margin-left: auto;
     margin-right: auto;
-
-
+    }
 }
 
-#article_1 .section_1 {
+
+.article_1 .section_1 {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+}
+@media screen and (max-width:1024px){
+    .article_1 .section_1{
+        width: 50%;
+    }
 }
 
-#article_1 #card_1 {
+.article_1 #card_1 {
     overflow: hidden;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     display: grid;
@@ -323,58 +397,67 @@ header .log {
     width: 85%;
     height: 35%;
 }
+@media screen and (max-width:1024px){
+    .article_1 #card_1 {
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    row-gap: 40px;
+    padding: 20px 20px 40px 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    width: 85%;
+    height: 35%;
+    }
+}
 
-#article_1 .img {
+.article_1 .img {
     margin-top: 20px;
     display: flex;
 }
 
-#article_1 .num_1 {
+.article_1 .num_1 {
     margin-top: 10px;
     margin-left: 10px;
     opacity: 0.7;
 }
 
-#article_1 .num_2 {
+.article_1 .num_2 {
     color: rgb(23, 248, 23);
 }
 
-#article_1 .rank p {
+.article_1 .rank p {
     margin-top: 10px;
     color: rgb(122, 118, 118);
 }
 
-#article_1 .projects p {
+.article_1 .projects p {
     margin-top: 10px;
     color: rgb(122, 118, 118);
 }
 
 
-#article_1 #card_1 .h_1 {
+.article_1 #card_1 .h_1 {
     opacity: 0.5;
     font-size: 15px;
 }
 
 
 
-#article_1 .top_categories {}
-
-#article_1 .top_categories .btn {
+.article_1 .top_categories .btn {
     display: flex;
     margin-top: 20px;
 
 }
 
-#article_1 .top_categories .box {
+.article_1 .top_categories .box {
     margin-left: 20px;
     background-color: rgb(209, 204, 204);
     border-radius: 15px;
     padding: 10px 20px;
 }
-#article_1 .section_1{
-    overflow: visible;
-}
-#article_1 .card_2 {
+
+.article_1 .card_2 {
     position: absolute;
     left: 10%;
     top: 20%;
@@ -387,17 +470,17 @@ header .log {
     z-index: 1;
     background-color: white;
 }
-#article_1 .card_2 iframe{
+.article_1 .card_2 iframe{
     height: 400px;
 }
 
-#article_1 .card_2 h1 {
+.article_1 .card_2 h1 {
     margin-top: 0px;
     margin-left: 0px;
     font-size: 15px;
 }
 
-#article_1 .card_2 .header {
+.article_1 .card_2 .header {
     margin-top: 40px;
     display: flex;
     height: 20px;
@@ -406,14 +489,14 @@ header .log {
     align-content: center;
 }
 
-#article_1 .card_2 .header h2 {
+.article_1 .card_2 .header h2 {
     margin-right: 20px;
     margin-left: 10px;
     opacity: 0.6;
     font-size: 13px;
 }
 
-#article_1 .card_2 .header .btn {
+.article_1 .card_2 .header .btn {
     margin-left: 20px;
     margin-right: 10px;
     opacity: 0.6;
@@ -421,57 +504,83 @@ header .log {
     display: flex;
 }
 
-#article_1 .card_2 .header .btn a {
+.article_1 .card_2 .header .btn a {
     margin-right: 20px;
 }
 
-/*lista*/
-.listh ol{
-}
-.listh ol li{
-}
-.listh ol li .name {
-margin-left: 70px;
-margin-top: 0;
-vertical-align: center;
-}
-
-.listh .img{
-    margin-top: 30px;
-}
 
 /* section 2,3*/
-#article_1 .section_3{
+
+.article_1 .section_3{
     padding-left: 30%;
     overflow: visible;
-    width: 100%;
+    width: 50%;
+}
+.article_1 .section_2{
+    padding-left: 0;
+    overflow: visible;
+    width: 50%;
+}
+@media screen and (max-width:1024px){
+    .article_1 .section_3 {
+        max-width: 50%;
+        margin-left: 0;
+        margin-bottom: 250px;
+        height: 200px;
+    }
+}
+@media screen and (max-width:1024px){
+    .article_1 .section_2{
+        max-width: 50%;
+        margin-left: 0;
+        margin-top: 250px;
+    }
 }
 
-#article_1 .box_2{
+@media screen and (max-width:768px){
+    .article_1 .section_{
+        margin-top: 0;
+    }
+}
+
+.article_1 .box_2{
     margin-top: 120px;
 }
-#article_1 .box_2 h1{
+.article_1 .box_2 h1{
     font-weight: 500;
     font-size: 30px;
 }
-#article_1 .box_2 p{
+.article_1 .box_2 p{
     opacity: 0.6;
     margin-top: 15px;
     line-height: 22px;
 }
-#article_1 .box_2 .learn-more{
+.article_1 .box_2 .learn-more{
     margin-top: 40px;
 }
-#article_1 .box_2 a{
+.article_1 .box_2 a{
     margin-left: 10px;
 }
-#article_1 .section_4{
+.article_1 .section_4{
     position: relative;
     padding-left: 25%;
+    overflow: visible;
+}
+@media screen and (max-width:1023px){
+    .article_1 .section_4{
+        margin-top: -150px;
+
+    }
+}
+@media screen and (max-width:768px){
+    .article_1 .section_4{
+        margin-top: 150px;
+
+    }
 }
 
 /*section4 firs card */
-#article_1 .card_11{
+.article_1 .card_11{
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
     width: 340px;
     padding: 10% 5% 10% 5%;
@@ -480,56 +589,61 @@ vertical-align: center;
     z-index: 1;
     text-align: center;
 }
-#article_1 .card_11 .header{
+@media screen and (max-width:1023px){
+    .article_1 .card_11{
+        margin-top: -100px;
+    }
+}
+.article_1 .card_11 .header{
     height: 60px;
     margin-top: 20px;
     text-align: center;
 }
-#article_1 .card_11 .main{
+.article_1 .card_11 .main{
     margin: 20px 10px 20px 10px;   
 }
-#article_1 .card_11 .main h1{
+.article_1 .card_11 .main h1{
    
     font-size: 20px;
     text-align: center;
 
 }
-#article_1 .card_11 .main p{
+.article_1 .card_11 .main p{
     margin-top: 15px;
     margin-left: 0px;
     text-align: center;
 }
-#article_1 .card_11 .footer{
+.article_1 .card_11 .footer{
     display: flex;
     height: 50px;
     width: 100%;
     justify-content: space-between;
     
 }
-#article_1 .card_11 .footer .box1{
+.article_1 .card_11 .footer .box1{
     border: rgb(182, 179, 179) 1px solid;
     border-radius: 10px;
     width: 47%;
     padding-top: 15px;
 }
-#article_1 .card_11 .footer .box1 a{
+.article_1 .card_11 .footer .box1 a{
     text-decoration: none;
     color: black;
 
 }
-#article_1 .card_11 .footer .box2{
+.article_1 .card_11 .footer .box2{
     border: rgb(182, 179, 179) 1px solid;
     border-radius: 10px;
     background-color: rgb(228, 60, 60);
     width: 47%;
     padding-top: 15px;
 }
-#article_1 .card_11 .footer .box2 a{
+.article_1 .card_11 .footer .box2 a{
     text-decoration: none;
     color: white;
 
 }
-#article_1 .card_22{
+.article_1 .card_22{
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
     width: 70%;
     height: 45%;
@@ -539,50 +653,59 @@ vertical-align: center;
     padding: 20px 15px 20px 15px;
     z-index: 2;
 }
-#article_1 .card_22 .header{
+@media screen and (max-width:1024px){
+    .article_1 .card_22{
+        width: 60%;
+        height: 80%;
+        top: 50%;
+        right: 40%;
+
+    }
+}
+.article_1 .card_22 .header{
     height: 20%;
     display: flex;
 }
-#article_1 .card_22 .header .name{
+.article_1 .card_22 .header .name{
     margin-left:15px;
     margin-top:5px;
 }
-#article_1 .card_22 .main{
+.article_1 .card_22 .main{
     margin-top: 30px;
     height: 40%;
 }
-#article_1 .card_22 .main p{
+.article_1 .card_22 .main p{
     font-size: 18px;
     opacity: 0.8;
 }
 
-#article_1 .card_22 .footer{
+.article_1 .card_22 .footer{
     display: flex;
     height: 50px;
     margin-top: 40px;
     margin-bottom: 0px;
     width: 100%;
 }
-#article_1 .card_22 .footer .left{
+.article_1 .card_22 .footer .left{
     display: flex;
     height: 40px;
     width: 220px;
 }
-#article_1 .card_22 .footer .left .box1{
+.article_1 .card_22 .footer .left .box1{
     border-radius: 7px;
     display: flex;
     padding: 10px 5px 10px 5px;
     color: rgb(44, 83, 255);
     background-color: rgb(223, 219, 219);
 }
-#article_1 .card_22 .footer .left .box2{
+.article_1 .card_22 .footer .left .box2{
     margin-left: 20px;
     border-radius: 7px;
     padding: 10px 5px 10px 5px;
     color: rgba(230, 169, 56, 0.897);
     background-color: rgb(223, 219, 219);
 }
-#article_1 .card_22 .footer .money{
+.article_1 .card_22 .footer .money{
     align-self: center;
     width: 50%;
     text-align: right;
