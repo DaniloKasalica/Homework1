@@ -7,14 +7,26 @@ body {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 200%;
+    background-position-y:-20%;
+    background-image: url(./img/Group\ 213.jpg);
+}
+header{
+
 }
 
 .container_1 {
     margin: 150px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+
 }
 
 .container_1 .item1 {
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -44,7 +56,7 @@ body {
     border: 1px solid rgb(221, 221, 221);
     
 }
-.container_1 .btn1 :first-child:hover{
+.container_1 .btn1 :first-child :hover{
     color: rgb(105, 20, 20);
     padding: 15px 20px 15px 20px;
 }
@@ -73,16 +85,12 @@ body {
 
 
 .container_1 .item2 {
-    background-size: 800px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(./img/Group\ 213.jpg);
-    align-self: flex-end;
-    position: relative;
-    overflow: hidden;
-
+   position: relative;
 }
 .container_1 .item2 .card1{
+    position: absolute;
+    top: -10%;
+    left: 20%;
     z-index: 1000;
     background-color: white;
     padding: 20px;
@@ -122,11 +130,113 @@ body {
 }
 
 
-.btn2 {
+
+.container_1 .item2 .card3{
+  
+    box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.2);
+    height: 420px;
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 500;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    top: 50%;
+    left: 45%;
+    background-color: white;
+}
+.container_1 .item2 .card3 .header{
+    display: flex;
+    height: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+.container_1 .item2 .card3 .header :first-child{
+    width: 35%;
+    height: 15px;
+}
+
+.container_1 .item2 .card3 .header .button :first-child{
+    margin-right: 10px;
+}
+.container_1 .item2 .card3 ol {
+    list-style-position: inside;
+    margin-top: 20px;
+    
+}
+.container_1 .item2 .card3 ol li{
+    border-bottom: 0.5px inset rgb(177, 177, 177);
+    padding-bottom: 15px;
+}
+.container_1 .item2 .card3 ol li .list{
+    display: flex;
+    margin-left: 15px;
+
+}
+.container_1 .item2 .card3 ol li .list .name{
+   margin-left: 15px;
+   align-self: center;
+}
+.container_1 .item2 .card3 ol li .list .name :last-child{
+    margin-top: 10px;
+}
+
+
+.container_1 .item2 .card4{
+    position: absolute;
+    top:50%;
+    left: 0;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    transform: rotate(-20deg);
+    z-index: 300;
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    row-gap: 40px;
+    padding: 20px 20px 40px 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+
+}
+.container_1 .item2 .card4 .img {
+    margin-top: 20px;
+    display: flex;
+}
+.container_1 .item2 .card4 .img :last-child{
+    height: 15px;
+    margin-left: 10px;
+    align-self: center;
+}
+.container_1 .item2 .card4 .blw{
+    margin-top: 20px;
+}
+
+.container_1 .item2 .card4 .top_categories .btn {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -20px;
+}.container_1 .item2 .card4 .top_categories .btn img{
+    margin-left: 20px;
+}
+
+header .log {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.btn2 {
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    background-color: rgb(228, 60, 60);
     z-index: 1000;
+    width: 55px;
+    align-self: flex-end;
+}
+.btn2 a {
+    text-decoration: none;
+    color: white;
 }
 
 #section_1 {
@@ -261,16 +371,24 @@ body {
     border-radius: 15px;
     padding: 10px 20px;
 }
-
+#article_1 .section_1{
+    overflow: visible;
+}
 #article_1 .card_2 {
     position: absolute;
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
-    height: 420px;
-    width: 250px;
-    overflow: hidden;
-    left: 50%;
+    left: 10%;
     top: 20%;
+    box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.2);
+    height: 500px;
+    width: 300px;
+    margin-left: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
     z-index: 1;
+    background-color: white;
+}
+#article_1 .card_2 iframe{
+    height: 400px;
 }
 
 #article_1 .card_2 h1 {
@@ -282,6 +400,10 @@ body {
 #article_1 .card_2 .header {
     margin-top: 40px;
     display: flex;
+    height: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
 }
 
 #article_1 .card_2 .header h2 {
@@ -320,7 +442,9 @@ vertical-align: center;
 
 /* section 2,3*/
 #article_1 .section_3{
-    padding-left: 20%;
+    padding-left: 30%;
+    overflow: visible;
+    width: 100%;
 }
 
 #article_1 .box_2{
@@ -333,6 +457,7 @@ vertical-align: center;
 #article_1 .box_2 p{
     opacity: 0.6;
     margin-top: 15px;
+    line-height: 22px;
 }
 #article_1 .box_2 .learn-more{
     margin-top: 40px;
@@ -348,10 +473,12 @@ vertical-align: center;
 /*section4 firs card */
 #article_1 .card_11{
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
-    width: 90%;
-    padding: 20px 10px 20px 10px;
-    height: 50%;
-    
+    width: 340px;
+    padding: 10% 5% 10% 5%;
+    height: 270px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
 #article_1 .card_11 .header{
     height: 60px;
@@ -362,8 +489,7 @@ vertical-align: center;
     margin: 20px 10px 20px 10px;   
 }
 #article_1 .card_11 .main h1{
-    margin-left: 10px;
-    margin-right: 10px;
+   
     font-size: 20px;
     text-align: center;
 
@@ -375,17 +501,16 @@ vertical-align: center;
 }
 #article_1 .card_11 .footer{
     display: flex;
-    width: 100%;
     height: 50px;
+    width: 100%;
+    justify-content: space-between;
     
 }
-/*obratiti paznju na box1, pri smanjivanju  */
 #article_1 .card_11 .footer .box1{
     border: rgb(182, 179, 179) 1px solid;
     border-radius: 10px;
-    padding: 15px 20px 15px 20px;
-    margin-left: 10px; 
-    overflow: hidden;
+    width: 47%;
+    padding-top: 15px;
 }
 #article_1 .card_11 .footer .box1 a{
     text-decoration: none;
@@ -395,11 +520,8 @@ vertical-align: center;
 #article_1 .card_11 .footer .box2{
     border: rgb(182, 179, 179) 1px solid;
     border-radius: 10px;
-    width: 45%;
-    margin-left: 10px;
-    text-align: center;
-    vertical-align: middle;
     background-color: rgb(228, 60, 60);
+    width: 47%;
     padding-top: 15px;
 }
 #article_1 .card_11 .footer .box2 a{
@@ -415,14 +537,14 @@ vertical-align: center;
     top:45%;
     right: 25%;
     padding: 20px 15px 20px 15px;
+    z-index: 2;
 }
 #article_1 .card_22 .header{
     height: 20%;
     display: flex;
-    overflow: hidden;
 }
 #article_1 .card_22 .header .name{
-    margin-left: 15px;
+    margin-left:15px;
     margin-top:5px;
 }
 #article_1 .card_22 .main{
@@ -436,7 +558,7 @@ vertical-align: center;
 
 #article_1 .card_22 .footer{
     display: flex;
-    height: 20%;
+    height: 50px;
     margin-top: 40px;
     margin-bottom: 0px;
     width: 100%;
@@ -444,7 +566,7 @@ vertical-align: center;
 #article_1 .card_22 .footer .left{
     display: flex;
     height: 40px;
-    width: 50%;
+    width: 220px;
 }
 #article_1 .card_22 .footer .left .box1{
     border-radius: 7px;
