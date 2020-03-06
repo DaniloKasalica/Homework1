@@ -1,0 +1,23 @@
+
+
+.listh ol {
+    list-style-position: inside;
+    margin-top: 20px;
+    
+}
+.listh ol li{
+    border-bottom: 0.5px inset rgb(177, 177, 177);
+    padding-bottom: 15px;
+}
+.listh ol li .list{
+    display: flex;
+    margin-left: 15px;
+
+}
+.listh  ol li .list .name{
+   margin-left: 15px;
+   align-self: center;
+}
+.listh ol li .list .name :last-child{
+    margin-top: 10px;
+}
