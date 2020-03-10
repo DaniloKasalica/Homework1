@@ -940,9 +940,11 @@ iframe{
 
 .article_1 .card_2 .header .btn a {
     margin-right: 20px;
+    font-size:15px;
+    color: rgb(228, 60, 60);
+    border: 1px solid white;
+
 }
-
-
 /* section 2,3*/
 
 .article_1 .section_3{
