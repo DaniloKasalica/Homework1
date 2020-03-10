@@ -31,7 +31,7 @@ body {
       }
       header{
         background-color:#AC101E;
-          height: 50px;
+        padding: 0px 10px 10px 10px;
       }
 header .log {
     display: flex;
@@ -39,19 +39,19 @@ header .log {
     justify-content: space-between;
 
 }
-header .log .logo{
-    color: #FCFCFC;
-    padding-left: 20px;
-    padding-right: 20px;
+header .log p{
+  margin-bottom: 0;
+  color: #62C370;
+  padding-bottom: 0;
 }
 .btn2 {
-    padding: 10px 15px 10px 15px;
-    border-radius: 15px;
-    background-color: #62C370;;
-    z-index: 1000;
-    width: 55px;
-    align-self: flex-end;
-}
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  background-color: #62C370;;
+  z-index: 1000;
+  width: 65px;
+  align-self: flex-end;
+  }
 @keyframes flip {
     from {
       -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
